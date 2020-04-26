@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_gradient">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_songrecognizing"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/background_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#FFFFFF"
+        app:navigationIcon="@drawable/ic_close"
+        app:title="Song Recognizing"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:elevation="0dp"
+        app:borderWidth="0dp"
+        app:fabCustomSize="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_songrecognizing"
+        app:layout_constraintVertical_bias="0.618"
+        app:srcCompat="@drawable/ic_sound"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
